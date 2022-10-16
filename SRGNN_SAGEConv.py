@@ -102,7 +102,7 @@ class SessionGraph(Module):
 
 
 
-class GNN(Model,module):
+class GNN(Model, Module):
     def __init__(self, idmap, features, edge_index_2, hidden_channels=512, out_channels=256, dropout=0.1):
         super(GNN, self).__init__()            
         self.idmap = idmap
